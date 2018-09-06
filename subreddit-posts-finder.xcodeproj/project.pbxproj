@@ -54,14 +54,198 @@
 		769F304B2140F5AA00A49E94 /* subreddit-posts-finder */ = {
 			isa = PBXGroup;
 			children = (
-				769F304C2140F5AB00A49E94 /* AppDelegate.swift */,
-				769F304E2140F5AB00A49E94 /* ViewController.swift */,
-				769F30502140F5AB00A49E94 /* Main.storyboard */,
-				769F30532140F5AD00A49E94 /* Assets.xcassets */,
-				769F30552140F5AD00A49E94 /* LaunchScreen.storyboard */,
 				769F30582140F5AD00A49E94 /* Info.plist */,
+				769F304C2140F5AB00A49E94 /* AppDelegate.swift */,
+				769F306E2141156000A49E94 /* API */,
+				769F3064214113E900A49E94 /* Model */,
+				769F3065214113FA00A49E94 /* View */,
+				769F30662141142A00A49E94 /* ViewModel */,
+				769F30772141183C00A49E94 /* SupportFiles */,
+				769F3063214113BD00A49E94 /* Resources */,
 			);
 			path = "subreddit-posts-finder";
+			sourceTree = "<group>";
+		};
+		769F3063214113BD00A49E94 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				769F30752141170600A49E94 /* Fonts */,
+				769F30532140F5AD00A49E94 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		769F3064214113E900A49E94 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				769F30702141159E00A49E94 /* Objects */,
+				769F3071214115A400A49E94 /* Data */,
+				769F30782141188200A49E94 /* Enums */,
+				769F30792141188D00A49E94 /* Extensions */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		769F3065214113FA00A49E94 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				769F3072214115EF00A49E94 /* ViewControllers */,
+				769F306D2141151D00A49E94 /* Designables */,
+				769F306A214114D000A49E94 /* SearchCell */,
+				769F30682141146300A49E94 /* PostCells */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		769F30662141142A00A49E94 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		769F30672141144800A49E94 /* XIB */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = XIB;
+			sourceTree = "<group>";
+		};
+		769F30682141146300A49E94 /* PostCells */ = {
+			isa = PBXGroup;
+			children = (
+				769F3069214114B900A49E94 /* Controller */,
+				769F30672141144800A49E94 /* XIB */,
+			);
+			path = PostCells;
+			sourceTree = "<group>";
+		};
+		769F3069214114B900A49E94 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		769F306A214114D000A49E94 /* SearchCell */ = {
+			isa = PBXGroup;
+			children = (
+				769F306C2141150600A49E94 /* Controller */,
+				769F306B214114FF00A49E94 /* XIB */,
+			);
+			path = SearchCell;
+			sourceTree = "<group>";
+		};
+		769F306B214114FF00A49E94 /* XIB */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = XIB;
+			sourceTree = "<group>";
+		};
+		769F306C2141150600A49E94 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		769F306D2141151D00A49E94 /* Designables */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Designables;
+			sourceTree = "<group>";
+		};
+		769F306E2141156000A49E94 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				769F3076214117B800A49E94 /* Providers */,
+				769F306F2141156800A49E94 /* Services */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		769F306F2141156800A49E94 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		769F30702141159E00A49E94 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		769F3071214115A400A49E94 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		769F3072214115EF00A49E94 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				769F3074214116AA00A49E94 /* Storyboard */,
+				769F3073214116A400A49E94 /* Controller */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		769F3073214116A400A49E94 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				769F304E2140F5AB00A49E94 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		769F3074214116AA00A49E94 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				769F30552140F5AD00A49E94 /* LaunchScreen.storyboard */,
+				769F30502140F5AB00A49E94 /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		769F30752141170600A49E94 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		769F3076214117B800A49E94 /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
+		769F30772141183C00A49E94 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		769F30782141188200A49E94 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		769F30792141188D00A49E94 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
