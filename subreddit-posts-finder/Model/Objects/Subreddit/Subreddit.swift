@@ -6,4 +6,14 @@
 //  Copyright © 2018 Jemimah Beryl M. Sai. All rights reserved.
 //
 
-import Foundation
+import ObjectMapper
+
+class Subreddit: Mappable {
+    var data: SubData?
+    
+    required init?(map: Map) {  }
+    
+    func mapping(map: Map) {
+        data <- map["data"]
+    }
+}
