@@ -14,6 +14,10 @@ class SubredditService {
     
     // MARK: Initializers
     
+    static let instance = SubredditService()
+    var searchDisplay = [SearchDisplay]()
+    var subscribeDisplay = [SubscribeDisplay]()
+    private let provider = MoyaProvider<SubredditAPI>()
     
     // MARK: Getters
     
