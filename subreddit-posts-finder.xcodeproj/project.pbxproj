@@ -93,10 +93,10 @@
 		769F3064214113E900A49E94 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				76EC3E132142435B00C1CC00 /* Displays */,
 				769F30702141159E00A49E94 /* Objects */,
-				769F3071214115A400A49E94 /* Data */,
 				769F30782141188200A49E94 /* Enums */,
-				769F30792141188D00A49E94 /* Extensions */,
+				769F30792141188D00A49E94 /* Extension */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -191,15 +191,10 @@
 		769F30702141159E00A49E94 /* Objects */ = {
 			isa = PBXGroup;
 			children = (
+				76EC3E1F214244BC00C1CC00 /* Subreddit */,
+				76EC3E1E214244B700C1CC00 /* Post */,
 			);
 			path = Objects;
-			sourceTree = "<group>";
-		};
-		769F3071214115A400A49E94 /* Data */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Data;
 			sourceTree = "<group>";
 		};
 		769F3072214115EF00A49E94 /* ViewControllers */ = {
@@ -256,11 +251,48 @@
 			path = Enums;
 			sourceTree = "<group>";
 		};
-		769F30792141188D00A49E94 /* Extensions */ = {
+		769F30792141188D00A49E94 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				76EC3E1D2142446500C1CC00 /* DataTypes */,
+				76EC3E1C2142445F00C1CC00 /* UIs */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		76EC3E132142435B00C1CC00 /* Displays */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Extensions;
+			path = Displays;
+			sourceTree = "<group>";
+		};
+		76EC3E1C2142445F00C1CC00 /* UIs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIs;
+			sourceTree = "<group>";
+		};
+		76EC3E1D2142446500C1CC00 /* DataTypes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataTypes;
+			sourceTree = "<group>";
+		};
+		76EC3E1E214244B700C1CC00 /* Post */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Post;
+			sourceTree = "<group>";
+		};
+		76EC3E1F214244BC00C1CC00 /* Subreddit */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Subreddit;
 			sourceTree = "<group>";
 		};
 		F7E7F191D34815882FF6BF0E /* Pods */ = {
