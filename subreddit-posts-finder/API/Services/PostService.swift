@@ -7,3 +7,17 @@
 //
 
 import Foundation
+import Moya
+import ObjectMapper
+
+class PostService {
+    
+    // MARK: Initializers
+    
+    
+    // MARK: Getters
+    
+    
+    // MARK: Setters
+    
+}
