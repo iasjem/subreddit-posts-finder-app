@@ -6,4 +6,14 @@
 //  Copyright © 2018 Jemimah Beryl M. Sai. All rights reserved.
 //
 
-import Foundation
+import ObjectMapper
+
+class PostChild: Mappable {
+    var data: PostChildData?
+    
+    required init?(map: Map) {  }
+    
+    func mapping(map: Map) {
+        data <- map["data"]
+    }
+}
