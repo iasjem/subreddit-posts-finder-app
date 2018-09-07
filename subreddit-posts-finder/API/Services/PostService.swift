@@ -14,6 +14,9 @@ class PostService {
     
     // MARK: Initializers
     
+    static let instance = PostService()
+    var postDisplay = [PostDisplay]()
+    private let provider = MoyaProvider<SubredditAPI>()
     
     // MARK: Getters
     
