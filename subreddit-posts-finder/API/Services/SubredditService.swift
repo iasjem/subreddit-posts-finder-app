@@ -7,3 +7,17 @@
 //
 
 import Foundation
+import Moya
+import ObjectMapper
+
+class SubredditService {
+    
+    // MARK: Initializers
+    
+    
+    // MARK: Getters
+    
+    
+    // MARK: Setters
+    
+}
