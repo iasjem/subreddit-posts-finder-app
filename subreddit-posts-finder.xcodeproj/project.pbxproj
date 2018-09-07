@@ -20,6 +20,10 @@
 		76EC3E292142471300C1CC00 /* PostPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EC3E282142471300C1CC00 /* PostPreview.swift */; };
 		76EC3E2B2142472300C1CC00 /* PostPreviewImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EC3E2A2142472300C1CC00 /* PostPreviewImages.swift */; };
 		76EC3E2D2142473000C1CC00 /* PostPreviewImagesSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EC3E2C2142473000C1CC00 /* PostPreviewImagesSource.swift */; };
+		76EC3E2F2142484800C1CC00 /* Subreddit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EC3E2E2142484800C1CC00 /* Subreddit.swift */; };
+		76EC3E312142485C00C1CC00 /* SubData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EC3E302142485C00C1CC00 /* SubData.swift */; };
+		76EC3E332142487000C1CC00 /* SubChild.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EC3E322142487000C1CC00 /* SubChild.swift */; };
+		76EC3E352142488000C1CC00 /* SubChildData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EC3E342142488000C1CC00 /* SubChildData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +42,10 @@
 		76EC3E282142471300C1CC00 /* PostPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostPreview.swift; sourceTree = "<group>"; };
 		76EC3E2A2142472300C1CC00 /* PostPreviewImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostPreviewImages.swift; sourceTree = "<group>"; };
 		76EC3E2C2142473000C1CC00 /* PostPreviewImagesSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostPreviewImagesSource.swift; sourceTree = "<group>"; };
+		76EC3E2E2142484800C1CC00 /* Subreddit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subreddit.swift; sourceTree = "<group>"; };
+		76EC3E302142485C00C1CC00 /* SubData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubData.swift; sourceTree = "<group>"; };
+		76EC3E322142487000C1CC00 /* SubChild.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubChild.swift; sourceTree = "<group>"; };
+		76EC3E342142488000C1CC00 /* SubChildData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubChildData.swift; sourceTree = "<group>"; };
 		BC38B5281F1CE3010B42DCB9 /* Pods-subreddit-posts-finder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-subreddit-posts-finder.release.xcconfig"; path = "Pods/Target Support Files/Pods-subreddit-posts-finder/Pods-subreddit-posts-finder.release.xcconfig"; sourceTree = "<group>"; };
 		EE9CE38D84F32B17A35CCA93 /* Pods-subreddit-posts-finder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-subreddit-posts-finder.debug.xcconfig"; path = "Pods/Target Support Files/Pods-subreddit-posts-finder/Pods-subreddit-posts-finder.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -312,6 +320,10 @@
 		76EC3E1F214244BC00C1CC00 /* Subreddit */ = {
 			isa = PBXGroup;
 			children = (
+				76EC3E2E2142484800C1CC00 /* Subreddit.swift */,
+				76EC3E302142485C00C1CC00 /* SubData.swift */,
+				76EC3E322142487000C1CC00 /* SubChild.swift */,
+				76EC3E342142488000C1CC00 /* SubChildData.swift */,
 			);
 			path = Subreddit;
 			sourceTree = "<group>";
@@ -445,12 +457,16 @@
 			files = (
 				76EC3E2B2142472300C1CC00 /* PostPreviewImages.swift in Sources */,
 				76EC3E25214246F300C1CC00 /* PostChild.swift in Sources */,
+				76EC3E352142488000C1CC00 /* SubChildData.swift in Sources */,
 				76EC3E21214246C300C1CC00 /* Post.swift in Sources */,
+				76EC3E332142487000C1CC00 /* SubChild.swift in Sources */,
 				76EC3E23214246E200C1CC00 /* PostData.swift in Sources */,
 				76EC3E292142471300C1CC00 /* PostPreview.swift in Sources */,
 				769F304F2140F5AB00A49E94 /* ViewController.swift in Sources */,
 				76EC3E2D2142473000C1CC00 /* PostPreviewImagesSource.swift in Sources */,
 				76EC3E272142470200C1CC00 /* PostChildData.swift in Sources */,
+				76EC3E2F2142484800C1CC00 /* Subreddit.swift in Sources */,
+				76EC3E312142485C00C1CC00 /* SubData.swift in Sources */,
 				769F304D2140F5AB00A49E94 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
