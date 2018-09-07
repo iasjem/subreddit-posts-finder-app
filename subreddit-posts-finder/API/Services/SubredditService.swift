@@ -21,6 +21,23 @@ class SubredditService {
     
     // MARK: Getters
     
+    func retrieveData(completion: @escaping (_ isComplete: Bool) -> ()) {
+        provider.request(.getSubreddits) { [weak self] (result) in
+            switch result {
+            case .success(let response):
+                do {
+                    guard let jsonData = try response.mapJSON() as? [String: Any] else { return }
+                    guard let strongSelf = self else { return }
+                    strongSelf.setData(from: jsonData)
+                    print("Successfully loaded data : \n\(jsonData)")
+                } catch {  }
+                completion(true)
+            case .failure(let error):
+                print("Failed to load data : \(error.localizedDescription)")
+                completion(false)
+            }
+        }
+    }
     
     // MARK: Setters
     
