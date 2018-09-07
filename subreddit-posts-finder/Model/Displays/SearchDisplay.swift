@@ -7,3 +7,17 @@
 //
 
 import Foundation
+
+struct SearchDisplay {
+    private(set) var displayName: String
+    private(set) var namePrefixed: String
+    private(set) var icon: URL?
+    private(set) var url: URL
+    
+    init(displayName: String, namePrefixed: String, icon: URL?, url: URL) {
+        self.displayName = displayName
+        self.namePrefixed = namePrefixed
+        self.icon = icon
+        self.url = url
+    }
+}
