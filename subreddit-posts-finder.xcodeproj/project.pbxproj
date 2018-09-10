@@ -22,6 +22,9 @@
 		7683D48921460F37006BE867 /* WithTextPostCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7683D48721460F37006BE867 /* WithTextPostCell.xib */; };
 		7683D48F21463E98006BE867 /* SubscribeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7683D48D21463E98006BE867 /* SubscribeCell.swift */; };
 		7683D49021463E98006BE867 /* SubscribeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7683D48E21463E98006BE867 /* SubscribeCell.xib */; };
+		7683D49421464F42006BE867 /* fa-regular-400.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7683D49121464F19006BE867 /* fa-regular-400.ttf */; };
+		7683D49521464F48006BE867 /* fa-solid-900.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7683D49221464F23006BE867 /* fa-solid-900.ttf */; };
+		7683D49621464F4B006BE867 /* fa-brands-400.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7683D49321464F2B006BE867 /* fa-brands-400.ttf */; };
 		769F304D2140F5AB00A49E94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769F304C2140F5AB00A49E94 /* AppDelegate.swift */; };
 		769F30522140F5AB00A49E94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 769F30502140F5AB00A49E94 /* Main.storyboard */; };
 		769F30542140F5AD00A49E94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 769F30532140F5AD00A49E94 /* Assets.xcassets */; };
@@ -58,6 +61,9 @@
 		7683D48721460F37006BE867 /* WithTextPostCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WithTextPostCell.xib; sourceTree = "<group>"; };
 		7683D48D21463E98006BE867 /* SubscribeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeCell.swift; sourceTree = "<group>"; };
 		7683D48E21463E98006BE867 /* SubscribeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubscribeCell.xib; sourceTree = "<group>"; };
+		7683D49121464F19006BE867 /* fa-regular-400.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fa-regular-400.ttf"; sourceTree = "<group>"; };
+		7683D49221464F23006BE867 /* fa-solid-900.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fa-solid-900.ttf"; sourceTree = "<group>"; };
+		7683D49321464F2B006BE867 /* fa-brands-400.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fa-brands-400.ttf"; sourceTree = "<group>"; };
 		769F30492140F5AA00A49E94 /* subreddit-posts-finder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "subreddit-posts-finder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		769F304C2140F5AB00A49E94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		769F30512140F5AB00A49E94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -316,6 +322,9 @@
 		769F30752141170600A49E94 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				7683D49121464F19006BE867 /* fa-regular-400.ttf */,
+				7683D49221464F23006BE867 /* fa-solid-900.ttf */,
+				7683D49321464F2B006BE867 /* fa-brands-400.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -470,9 +479,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				7683D48921460F37006BE867 /* WithTextPostCell.xib in Resources */,
+				7683D49521464F48006BE867 /* fa-solid-900.ttf in Resources */,
 				769F30572140F5AD00A49E94 /* LaunchScreen.storyboard in Resources */,
 				7683D48121460EDD006BE867 /* WithWideImagePostCell.xib in Resources */,
+				7683D49421464F42006BE867 /* fa-regular-400.ttf in Resources */,
 				7683D48521460F0B006BE867 /* TitleOnlyPostCell.xib in Resources */,
+				7683D49621464F4B006BE867 /* fa-brands-400.ttf in Resources */,
 				7683D49021463E98006BE867 /* SubscribeCell.xib in Resources */,
 				7683D47D21460E8A006BE867 /* SearchCell.xib in Resources */,
 				769F30542140F5AD00A49E94 /* Assets.xcassets in Resources */,
