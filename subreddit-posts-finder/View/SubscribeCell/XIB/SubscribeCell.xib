@@ -309,6 +309,6 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="NoImageAvailable" width="480" height="480"/>
+        <image name="NoImageAvailable" width="456" height="456"/>
     </resources>
 </document>
