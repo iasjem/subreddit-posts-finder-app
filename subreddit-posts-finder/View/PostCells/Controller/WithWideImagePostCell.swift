@@ -9,10 +9,8 @@
 import UIKit
 
 class WithWideImagePostCell: UICollectionViewCell {
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
+    @IBOutlet weak var postImageView: UIImageView!
+    @IBOutlet weak var subredditLabel: UILabel!
+    @IBOutlet weak var createdUTCLabel: UILabel!
+    @IBOutlet weak var postTitleLabel: UILabel!
 }
