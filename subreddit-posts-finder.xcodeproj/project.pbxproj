@@ -20,6 +20,8 @@
 		7683D48521460F0B006BE867 /* TitleOnlyPostCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7683D48321460F0B006BE867 /* TitleOnlyPostCell.xib */; };
 		7683D48821460F37006BE867 /* WithTextPostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7683D48621460F37006BE867 /* WithTextPostCell.swift */; };
 		7683D48921460F37006BE867 /* WithTextPostCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7683D48721460F37006BE867 /* WithTextPostCell.xib */; };
+		7683D48F21463E98006BE867 /* SubscribeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7683D48D21463E98006BE867 /* SubscribeCell.swift */; };
+		7683D49021463E98006BE867 /* SubscribeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7683D48E21463E98006BE867 /* SubscribeCell.xib */; };
 		769F304D2140F5AB00A49E94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769F304C2140F5AB00A49E94 /* AppDelegate.swift */; };
 		769F30522140F5AB00A49E94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 769F30502140F5AB00A49E94 /* Main.storyboard */; };
 		769F30542140F5AD00A49E94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 769F30532140F5AD00A49E94 /* Assets.xcassets */; };
@@ -54,6 +56,8 @@
 		7683D48321460F0B006BE867 /* TitleOnlyPostCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleOnlyPostCell.xib; sourceTree = "<group>"; };
 		7683D48621460F37006BE867 /* WithTextPostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithTextPostCell.swift; sourceTree = "<group>"; };
 		7683D48721460F37006BE867 /* WithTextPostCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WithTextPostCell.xib; sourceTree = "<group>"; };
+		7683D48D21463E98006BE867 /* SubscribeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeCell.swift; sourceTree = "<group>"; };
+		7683D48E21463E98006BE867 /* SubscribeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubscribeCell.xib; sourceTree = "<group>"; };
 		769F30492140F5AA00A49E94 /* subreddit-posts-finder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "subreddit-posts-finder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		769F304C2140F5AB00A49E94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		769F30512140F5AB00A49E94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -96,6 +100,31 @@
 				4FCC998F635640DC88DDC025 /* Pods_subreddit_posts_finder.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7683D48A21463E48006BE867 /* SubscribeCell */ = {
+			isa = PBXGroup;
+			children = (
+				7683D48B21463E59006BE867 /* Controller */,
+				7683D48C21463E69006BE867 /* XIB */,
+			);
+			path = SubscribeCell;
+			sourceTree = "<group>";
+		};
+		7683D48B21463E59006BE867 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7683D48D21463E98006BE867 /* SubscribeCell.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7683D48C21463E69006BE867 /* XIB */ = {
+			isa = PBXGroup;
+			children = (
+				7683D48E21463E98006BE867 /* SubscribeCell.xib */,
+			);
+			path = XIB;
 			sourceTree = "<group>";
 		};
 		769F30402140F5AA00A49E94 = {
@@ -154,6 +183,7 @@
 		769F3065214113FA00A49E94 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7683D48A21463E48006BE867 /* SubscribeCell */,
 				769F3072214115EF00A49E94 /* ViewControllers */,
 				769F306D2141151D00A49E94 /* Designables */,
 				769F306A214114D000A49E94 /* SearchCell */,
@@ -443,6 +473,7 @@
 				769F30572140F5AD00A49E94 /* LaunchScreen.storyboard in Resources */,
 				7683D48121460EDD006BE867 /* WithWideImagePostCell.xib in Resources */,
 				7683D48521460F0B006BE867 /* TitleOnlyPostCell.xib in Resources */,
+				7683D49021463E98006BE867 /* SubscribeCell.xib in Resources */,
 				7683D47D21460E8A006BE867 /* SearchCell.xib in Resources */,
 				769F30542140F5AD00A49E94 /* Assets.xcassets in Resources */,
 				769F30522140F5AB00A49E94 /* Main.storyboard in Resources */,
@@ -509,6 +540,7 @@
 				76EC3E2B2142472300C1CC00 /* PostPreviewImages.swift in Sources */,
 				76EC3E25214246F300C1CC00 /* PostChild.swift in Sources */,
 				7683D48421460F0B006BE867 /* TitleOnlyPostCell.swift in Sources */,
+				7683D48F21463E98006BE867 /* SubscribeCell.swift in Sources */,
 				7683D48021460EDD006BE867 /* WithWideImagePostCell.swift in Sources */,
 				76EC3E352142488000C1CC00 /* SubChildData.swift in Sources */,
 				7683D47721425FAC006BE867 /* SubredditService.swift in Sources */,
