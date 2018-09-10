@@ -6,4 +6,64 @@
 //  Copyright © 2018 Jemimah Beryl M. Sai. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+@IBDesignable class RoundButton: UIButton {
+    
+    // MARK: Inspectable variables
+    
+    @IBInspectable var cornerRadius: CGFloat = 0 {
+        didSet {
+            setCornerRadius(value: cornerRadius)
+        }
+    }
+    
+    @IBInspectable var borderWidth: CGFloat = 0 {
+        didSet {
+            setBorderWidth(value: borderWidth)
+        }
+    }
+    
+    @IBInspectable var borderColor: UIColor = UIColor.clear {
+        didSet {
+            setBorderColor(value: borderColor)
+        }
+    }
+    
+    // MARK: Initializers
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setCornerRadius(value: cornerRadius)
+        setBorderWidth(value: borderWidth)
+        setBorderColor(value: borderColor)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        setCornerRadius(value: cornerRadius)
+        setBorderWidth(value: borderWidth)
+        setBorderColor(value: borderColor)
+    }
+    
+    override func prepareForInterfaceBuilder() {
+        setCornerRadius(value: cornerRadius)
+        setBorderWidth(value: borderWidth)
+        setBorderColor(value: borderColor)
+    }
+    
+    // MARK: Setters
+    
+    func setCornerRadius(value: CGFloat) {
+        layer.cornerRadius = value
+    }
+    
+    func setBorderWidth(value: CGFloat) {
+        layer.borderWidth = value
+        
+    }
+    
+    func setBorderColor(value: UIColor) {
+        layer.borderColor = value.cgColor
+    }
+}
