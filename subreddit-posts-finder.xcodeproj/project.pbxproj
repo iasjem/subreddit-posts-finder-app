@@ -25,6 +25,9 @@
 		7683D49421464F42006BE867 /* fa-regular-400.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7683D49121464F19006BE867 /* fa-regular-400.ttf */; };
 		7683D49521464F48006BE867 /* fa-solid-900.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7683D49221464F23006BE867 /* fa-solid-900.ttf */; };
 		7683D49621464F4B006BE867 /* fa-brands-400.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7683D49321464F2B006BE867 /* fa-brands-400.ttf */; };
+		7683D4982146752E006BE867 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7683D4972146752E006BE867 /* RoundButton.swift */; };
+		7683D49A2146755A006BE867 /* RoundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7683D4992146755A006BE867 /* RoundImageView.swift */; };
+		7683D49C2146759E006BE867 /* RoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7683D49B2146759E006BE867 /* RoundView.swift */; };
 		769F304D2140F5AB00A49E94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769F304C2140F5AB00A49E94 /* AppDelegate.swift */; };
 		769F30522140F5AB00A49E94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 769F30502140F5AB00A49E94 /* Main.storyboard */; };
 		769F30542140F5AD00A49E94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 769F30532140F5AD00A49E94 /* Assets.xcassets */; };
@@ -64,6 +67,9 @@
 		7683D49121464F19006BE867 /* fa-regular-400.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fa-regular-400.ttf"; sourceTree = "<group>"; };
 		7683D49221464F23006BE867 /* fa-solid-900.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fa-solid-900.ttf"; sourceTree = "<group>"; };
 		7683D49321464F2B006BE867 /* fa-brands-400.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fa-brands-400.ttf"; sourceTree = "<group>"; };
+		7683D4972146752E006BE867 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		7683D4992146755A006BE867 /* RoundImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundImageView.swift; sourceTree = "<group>"; };
+		7683D49B2146759E006BE867 /* RoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundView.swift; sourceTree = "<group>"; };
 		769F30492140F5AA00A49E94 /* subreddit-posts-finder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "subreddit-posts-finder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		769F304C2140F5AB00A49E94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		769F30512140F5AB00A49E94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -262,6 +268,9 @@
 		769F306D2141151D00A49E94 /* Designables */ = {
 			isa = PBXGroup;
 			children = (
+				7683D4972146752E006BE867 /* RoundButton.swift */,
+				7683D4992146755A006BE867 /* RoundImageView.swift */,
+				7683D49B2146759E006BE867 /* RoundView.swift */,
 			);
 			path = Designables;
 			sourceTree = "<group>";
@@ -555,8 +564,10 @@
 				7683D48F21463E98006BE867 /* SubscribeCell.swift in Sources */,
 				7683D48021460EDD006BE867 /* WithWideImagePostCell.swift in Sources */,
 				76EC3E352142488000C1CC00 /* SubChildData.swift in Sources */,
+				7683D4982146752E006BE867 /* RoundButton.swift in Sources */,
 				7683D47721425FAC006BE867 /* SubredditService.swift in Sources */,
 				76EC3E21214246C300C1CC00 /* Post.swift in Sources */,
+				7683D49C2146759E006BE867 /* RoundView.swift in Sources */,
 				76EC3E332142487000C1CC00 /* SubChild.swift in Sources */,
 				7683D473214251E9006BE867 /* PostViewController.swift in Sources */,
 				76EC3E23214246E200C1CC00 /* PostData.swift in Sources */,
@@ -568,6 +579,7 @@
 				76EC3E2F2142484800C1CC00 /* Subreddit.swift in Sources */,
 				76EC3E312142485C00C1CC00 /* SubData.swift in Sources */,
 				769F304D2140F5AB00A49E94 /* AppDelegate.swift in Sources */,
+				7683D49A2146755A006BE867 /* RoundImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
