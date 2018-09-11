@@ -68,14 +68,9 @@
                                 </subviews>
                             </stackView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="KKa-He-8gm">
-                                <rect key="frame" x="15" y="90" width="384" height="646"/>
+                                <rect key="frame" x="15" y="80" width="384" height="656"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="RgW-yH-USp">
-                                    <size key="itemSize" width="50" height="50"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
+                                <collectionViewLayout key="collectionViewLayout" id="z2y-GH-NQ3" customClass="PostCollectionViewFlowLayout" customModule="subreddit_posts_finder" customModuleProvider="target"/>
                                 <cells/>
                             </collectionView>
                         </subviews>
@@ -85,7 +80,7 @@
                             <constraint firstItem="YrS-TH-h49" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="A8w-pm-8ga"/>
                             <constraint firstItem="tFZ-yI-HVZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="LAn-sD-QeO"/>
                             <constraint firstItem="YrS-TH-h49" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="RVT-2W-9ve"/>
-                            <constraint firstItem="KKa-He-8gm" firstAttribute="top" secondItem="YrS-TH-h49" secondAttribute="bottom" constant="10" id="UtR-Zr-KYJ"/>
+                            <constraint firstItem="KKa-He-8gm" firstAttribute="top" secondItem="YrS-TH-h49" secondAttribute="bottom" id="UtR-Zr-KYJ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="KKa-He-8gm" secondAttribute="bottom" id="cV2-3k-NVi"/>
                             <constraint firstItem="tFZ-yI-HVZ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="lyL-88-5XH"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tFZ-yI-HVZ" secondAttribute="trailing" constant="80" id="umO-K6-a0F"/>
@@ -94,6 +89,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="loadingView" destination="tFZ-yI-HVZ" id="lPa-VF-CPj"/>
+                        <outlet property="postCollectionView" destination="KKa-He-8gm" id="OMB-JT-En7"/>
+                        <outlet property="spinner" destination="qpD-hF-M07" id="Wq0-JP-8RC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -110,7 +110,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tB2-wB-2Qb">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
                                 <subviews>
-                                    <searchBar contentMode="redraw" placeholder="Subreddit" translatesAutoresizingMaskIntoConstraints="NO" id="Mcb-tp-2WW">
+                                    <searchBar contentMode="redraw" searchBarStyle="prominent" placeholder="Subreddit" translatesAutoresizingMaskIntoConstraints="NO" id="Mcb-tp-2WW">
                                         <rect key="frame" x="15" y="24" width="384" height="56"/>
                                         <color key="barTintColor" red="0.37254901959999998" green="0.59999999999999998" blue="0.81176470590000005" alpha="1" colorSpace="calibratedRGB"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
@@ -129,7 +129,7 @@
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="VTj-Wg-YLh">
-                                <rect key="frame" x="0.0" y="80" width="414" height="656"/>
+                                <rect key="frame" x="15" y="80" width="384" height="656"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="1Aq-0W-4Ji" userLabel="Loading View">
@@ -151,27 +151,29 @@
                         <color key="backgroundColor" white="0.66666666666666663" alpha="0.30415239726027399" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
                         <constraints>
+                            <constraint firstItem="VTj-Wg-YLh" firstAttribute="bottom" secondItem="OIj-pA-WNK" secondAttribute="bottom" id="CFh-kY-uEP"/>
                             <constraint firstItem="tB2-wB-2Qb" firstAttribute="leading" secondItem="OIj-pA-WNK" secondAttribute="leading" id="CJT-sY-FK3"/>
-                            <constraint firstItem="VTj-Wg-YLh" firstAttribute="leading" secondItem="OIj-pA-WNK" secondAttribute="leading" id="Ioq-NF-Qkr"/>
-                            <constraint firstItem="VTj-Wg-YLh" firstAttribute="top" secondItem="tB2-wB-2Qb" secondAttribute="bottom" id="MIw-FY-0vb"/>
                             <constraint firstItem="tB2-wB-2Qb" firstAttribute="trailing" secondItem="OIj-pA-WNK" secondAttribute="trailing" id="Mq2-4c-wuC"/>
+                            <constraint firstItem="VTj-Wg-YLh" firstAttribute="top" secondItem="tB2-wB-2Qb" secondAttribute="bottom" id="Q47-jy-f1k"/>
+                            <constraint firstItem="OIj-pA-WNK" firstAttribute="trailing" secondItem="VTj-Wg-YLh" secondAttribute="trailing" constant="15" id="Rge-WS-5aW"/>
                             <constraint firstItem="OIj-pA-WNK" firstAttribute="trailing" secondItem="1Aq-0W-4Ji" secondAttribute="trailing" constant="80" id="UDZ-u2-dVe"/>
                             <constraint firstItem="tB2-wB-2Qb" firstAttribute="top" secondItem="shU-1f-v0G" secondAttribute="top" id="WZ2-Jg-CnE"/>
-                            <constraint firstItem="VTj-Wg-YLh" firstAttribute="trailing" secondItem="OIj-pA-WNK" secondAttribute="trailing" id="XaG-4L-bRC"/>
                             <constraint firstItem="1Aq-0W-4Ji" firstAttribute="centerY" secondItem="shU-1f-v0G" secondAttribute="centerY" id="c2n-YZ-4on"/>
-                            <constraint firstItem="VTj-Wg-YLh" firstAttribute="bottom" secondItem="OIj-pA-WNK" secondAttribute="bottom" id="peY-5s-eca"/>
+                            <constraint firstItem="VTj-Wg-YLh" firstAttribute="leading" secondItem="OIj-pA-WNK" secondAttribute="leading" constant="15" id="dR6-v4-vtC"/>
                             <constraint firstItem="1Aq-0W-4Ji" firstAttribute="leading" secondItem="OIj-pA-WNK" secondAttribute="leading" constant="80" id="sGb-lF-OI8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="OIj-pA-WNK"/>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="zmb-3p-FdS" appends="YES" id="lUz-la-Q7S"/>
-                        </connections>
                     </view>
+                    <connections>
+                        <outlet property="loadingView" destination="1Aq-0W-4Ji" id="KHZ-1i-bwG"/>
+                        <outlet property="searchBar" destination="Mcb-tp-2WW" id="BQr-Vn-LbK"/>
+                        <outlet property="searchTableView" destination="VTj-Wg-YLh" id="l4c-MR-Mv5"/>
+                        <outlet property="spinner" destination="IXo-99-uNK" id="9Yl-2k-6rK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yEg-59-QUw" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="zmb-3p-FdS"/>
             </objects>
-            <point key="canvasLocation" x="965.60000000000002" y="113.79310344827587"/>
+            <point key="canvasLocation" x="965.21739130434787" y="113.31521739130436"/>
         </scene>
     </scenes>
 </document>

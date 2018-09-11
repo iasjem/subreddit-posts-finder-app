@@ -17,7 +17,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="TitleOnlyPostCell" customModule="subreddit_posts_finder" customModuleProvider="target">
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TitleOnlyPostCell" id="gTV-IL-0wX" customClass="TitleOnlyPostCell" customModule="subreddit_posts_finder" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -28,7 +28,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="subreddit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9kO-hW-ZGu">
-                                <rect key="frame" x="10" y="10" width="62.5" height="19.5"/>
+                                <rect key="frame" x="15" y="15" width="62.5" height="19.5"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -37,7 +37,7 @@
                                 <rect key="frame" x="0.0" y="240" width="300" height="60"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="hyj-8K-u3N">
-                                        <rect key="frame" x="192" y="-25" width="98" height="44"/>
+                                        <rect key="frame" x="187" y="-25" width="98" height="44"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K7e-J8-ZSw" customClass="RoundButton" customModule="subreddit_posts_finder" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
@@ -88,7 +88,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Bvw-mI-Vfi">
-                                        <rect key="frame" x="10" y="-25" width="98" height="44"/>
+                                        <rect key="frame" x="15" y="-25" width="98" height="44"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g2w-sX-23Q" customClass="RoundButton" customModule="subreddit_posts_finder" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
@@ -142,14 +142,14 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="Bvw-mI-Vfi" firstAttribute="top" secondItem="EJx-jM-nx7" secondAttribute="top" constant="-25" id="2nr-GJ-Lfu"/>
-                                    <constraint firstAttribute="trailing" secondItem="hyj-8K-u3N" secondAttribute="trailing" constant="10" id="3ov-On-4pY"/>
+                                    <constraint firstAttribute="trailing" secondItem="hyj-8K-u3N" secondAttribute="trailing" constant="15" id="3ov-On-4pY"/>
                                     <constraint firstAttribute="height" constant="60" id="Xqb-F3-O1d"/>
                                     <constraint firstItem="hyj-8K-u3N" firstAttribute="top" secondItem="EJx-jM-nx7" secondAttribute="top" constant="-25" id="ib7-4D-8HL"/>
-                                    <constraint firstItem="Bvw-mI-Vfi" firstAttribute="leading" secondItem="EJx-jM-nx7" secondAttribute="leading" constant="10" id="w9y-n1-zgs"/>
+                                    <constraint firstItem="Bvw-mI-Vfi" firstAttribute="leading" secondItem="EJx-jM-nx7" secondAttribute="leading" constant="15" id="w9y-n1-zgs"/>
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OHC-Ro-qOJ">
-                                <rect key="frame" x="235" y="10" width="55" height="30"/>
+                                <rect key="frame" x="230" y="15" width="55" height="30"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Now" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="buC-8w-zI7">
                                         <rect key="frame" x="0.0" y="0.0" width="25" height="30"/>
@@ -173,7 +173,7 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="iLU-ZZ-ccv">
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="iLU-ZZ-ccv">
                                 <rect key="frame" x="20" y="60" width="260" height="88"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NoImageAvailable" translatesAutoresizingMaskIntoConstraints="NO" id="Ryb-DN-U7R" customClass="RoundImageView" customModule="subreddit_posts_finder" customModuleProvider="target">
@@ -189,7 +189,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Post Tile" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kmG-eK-LSi">
-                                        <rect key="frame" x="98" y="0.0" width="162" height="88"/>
+                                        <rect key="frame" x="108" y="0.0" width="152" height="88"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="16"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -200,15 +200,13 @@
                         <color key="backgroundColor" red="0.0" green="0.4549019608" blue="0.80392156859999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="EJx-jM-nx7" firstAttribute="leading" secondItem="uBM-uD-dk0" secondAttribute="leading" id="1Sp-eX-fim"/>
-                            <constraint firstItem="OHC-Ro-qOJ" firstAttribute="top" secondItem="uBM-uD-dk0" secondAttribute="top" constant="10" id="5f2-W7-dyu"/>
+                            <constraint firstItem="OHC-Ro-qOJ" firstAttribute="top" secondItem="uBM-uD-dk0" secondAttribute="top" constant="15" id="5f2-W7-dyu"/>
                             <constraint firstAttribute="bottom" secondItem="EJx-jM-nx7" secondAttribute="bottom" id="6zP-Fc-wvY"/>
                             <constraint firstAttribute="trailing" secondItem="EJx-jM-nx7" secondAttribute="trailing" id="AmA-R8-8Je"/>
-                            <constraint firstItem="9kO-hW-ZGu" firstAttribute="top" secondItem="uBM-uD-dk0" secondAttribute="top" constant="10" id="MHd-Ny-ESt"/>
-                            <constraint firstItem="9kO-hW-ZGu" firstAttribute="top" secondItem="uBM-uD-dk0" secondAttribute="top" constant="10" id="MmF-iq-ajN"/>
+                            <constraint firstItem="9kO-hW-ZGu" firstAttribute="top" secondItem="uBM-uD-dk0" secondAttribute="top" constant="15" id="MHd-Ny-ESt"/>
                             <constraint firstItem="iLU-ZZ-ccv" firstAttribute="leading" secondItem="uBM-uD-dk0" secondAttribute="leading" constant="20" id="NoK-Kk-5my"/>
-                            <constraint firstAttribute="trailing" secondItem="OHC-Ro-qOJ" secondAttribute="trailing" constant="10" id="RAV-md-p1E"/>
-                            <constraint firstItem="9kO-hW-ZGu" firstAttribute="leading" secondItem="uBM-uD-dk0" secondAttribute="leading" constant="10" id="WCX-qN-9gJ"/>
-                            <constraint firstItem="9kO-hW-ZGu" firstAttribute="leading" secondItem="uBM-uD-dk0" secondAttribute="leading" constant="10" id="hF8-DR-lWM"/>
+                            <constraint firstAttribute="trailing" secondItem="OHC-Ro-qOJ" secondAttribute="trailing" constant="15" id="RAV-md-p1E"/>
+                            <constraint firstItem="9kO-hW-ZGu" firstAttribute="leading" secondItem="uBM-uD-dk0" secondAttribute="leading" constant="15" id="WCX-qN-9gJ"/>
                             <constraint firstItem="iLU-ZZ-ccv" firstAttribute="top" secondItem="uBM-uD-dk0" secondAttribute="top" constant="60" id="i6B-Sf-Pt1"/>
                             <constraint firstAttribute="trailing" secondItem="iLU-ZZ-ccv" secondAttribute="trailing" constant="20" id="rwv-By-SkE"/>
                         </constraints>

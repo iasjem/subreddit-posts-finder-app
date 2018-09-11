@@ -9,9 +9,46 @@
 import UIKit
 
 class PostCollectionViewFlowLayout: UICollectionViewFlowLayout {
-    override func prepare() {
+
+    // MARK: Properties
+    
+    let itemHeight: CGFloat = 300
+    
+    var itemWidth: CGFloat {
+        return collectionView!.frame.width
+    }
+    
+    override var itemSize: CGSize {
+        set {
+            self.itemSize = CGSize(width: itemWidth, height: itemHeight)
+        }
+        get {
+            return CGSize(width: itemWidth, height: itemHeight)
+        }
+    }
+    
+    override func targetContentOffset(forProposedContentOffset proposedContentOffset: CGPoint) -> CGPoint {
+        return collectionView!.contentOffset
+    }
+    
+    // MARK: Initializers
+    
+    override init() {
+        super.init()
+        setupLayout()
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        setupLayout()
+    }
+    
+    // MARK: Setups
+    
+    func setupLayout() {
+        sectionInset = UIEdgeInsetsMake(15, 0, 100, 0)
+        minimumInteritemSpacing = 0
+        minimumLineSpacing = 15
         scrollDirection = .vertical
-        collectionView?.decelerationRate = UIScrollViewDecelerationRateFast
-        collectionView?.contentInset = UIEdgeInsetsMake(0.0, 0.0, 150.0, 0.0)
     }
 }
