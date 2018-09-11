@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		38F658037E766B7E095A4FCE /* Pods_subreddit_posts_finder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FCC998F635640DC88DDC025 /* Pods_subreddit_posts_finder.framework */; };
+		764B7A3F2147965900752BFC /* PostCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764B7A3E2147965900752BFC /* PostCollectionViewFlowLayout.swift */; };
 		7665EDDF21478AF600E40AD0 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7665EDDE21478AF600E40AD0 /* SearchViewController.swift */; };
 		7683D473214251E9006BE867 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7683D472214251E9006BE867 /* PostViewController.swift */; };
 		7683D475214255EF006BE867 /* SubredditAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7683D474214255EF006BE867 /* SubredditAPI.swift */; };
@@ -51,6 +52,7 @@
 
 /* Begin PBXFileReference section */
 		4FCC998F635640DC88DDC025 /* Pods_subreddit_posts_finder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_subreddit_posts_finder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		764B7A3E2147965900752BFC /* PostCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 		7665EDDE21478AF600E40AD0 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		7683D472214251E9006BE867 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		7683D474214255EF006BE867 /* SubredditAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubredditAPI.swift; sourceTree = "<group>"; };
@@ -273,6 +275,7 @@
 				7683D4972146752E006BE867 /* RoundButton.swift */,
 				7683D4992146755A006BE867 /* RoundImageView.swift */,
 				7683D49B2146759E006BE867 /* RoundView.swift */,
+				764B7A3E2147965900752BFC /* PostCollectionViewFlowLayout.swift */,
 			);
 			path = Designables;
 			sourceTree = "<group>";
@@ -570,6 +573,7 @@
 				7683D4982146752E006BE867 /* RoundButton.swift in Sources */,
 				7683D47721425FAC006BE867 /* SubredditService.swift in Sources */,
 				76EC3E21214246C300C1CC00 /* Post.swift in Sources */,
+				764B7A3F2147965900752BFC /* PostCollectionViewFlowLayout.swift in Sources */,
 				7683D49C2146759E006BE867 /* RoundView.swift in Sources */,
 				76EC3E332142487000C1CC00 /* SubChild.swift in Sources */,
 				7683D473214251E9006BE867 /* PostViewController.swift in Sources */,
