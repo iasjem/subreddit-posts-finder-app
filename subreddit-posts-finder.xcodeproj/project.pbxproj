@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		38F658037E766B7E095A4FCE /* Pods_subreddit_posts_finder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FCC998F635640DC88DDC025 /* Pods_subreddit_posts_finder.framework */; };
+		7665EDDF21478AF600E40AD0 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7665EDDE21478AF600E40AD0 /* SearchViewController.swift */; };
 		7683D473214251E9006BE867 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7683D472214251E9006BE867 /* PostViewController.swift */; };
 		7683D475214255EF006BE867 /* SubredditAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7683D474214255EF006BE867 /* SubredditAPI.swift */; };
 		7683D47721425FAC006BE867 /* SubredditService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7683D47621425FAC006BE867 /* SubredditService.swift */; };
@@ -50,6 +51,7 @@
 
 /* Begin PBXFileReference section */
 		4FCC998F635640DC88DDC025 /* Pods_subreddit_posts_finder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_subreddit_posts_finder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7665EDDE21478AF600E40AD0 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		7683D472214251E9006BE867 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		7683D474214255EF006BE867 /* SubredditAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubredditAPI.swift; sourceTree = "<group>"; };
 		7683D47621425FAC006BE867 /* SubredditService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubredditService.swift; sourceTree = "<group>"; };
@@ -315,6 +317,7 @@
 			isa = PBXGroup;
 			children = (
 				7683D472214251E9006BE867 /* PostViewController.swift */,
+				7665EDDE21478AF600E40AD0 /* SearchViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -575,6 +578,7 @@
 				76EC3E2D2142473000C1CC00 /* PostPreviewImagesSource.swift in Sources */,
 				76EC3E272142470200C1CC00 /* PostChildData.swift in Sources */,
 				7683D47921425FCF006BE867 /* PostService.swift in Sources */,
+				7665EDDF21478AF600E40AD0 /* SearchViewController.swift in Sources */,
 				7683D475214255EF006BE867 /* SubredditAPI.swift in Sources */,
 				76EC3E2F2142484800C1CC00 /* Subreddit.swift in Sources */,
 				76EC3E312142485C00C1CC00 /* SubData.swift in Sources */,
