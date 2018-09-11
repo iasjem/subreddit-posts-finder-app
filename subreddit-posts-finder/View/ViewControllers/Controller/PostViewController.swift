@@ -9,27 +9,47 @@
 import UIKit
 
 class PostViewController: UIViewController {
-
+    
+    // MARK: Outlets
+    
+    @IBOutlet weak var postCollectionView: UICollectionView!
+    @IBOutlet weak var loadingView: UIStackView!
+    @IBOutlet weak var spinner: UIActivityIndicatorView!
+    
+    // MARK: View lifecycles
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        setupPostCollectionView()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    // MARK: Setups
+    
+    func setupPostCollectionView() {
+        postCollectionView.delegate = self
+        postCollectionView.dataSource = self
+        postCollectionView.register(UINib.init(nibName: "SubscribeCell", bundle: nil), forCellWithReuseIdentifier: "SubscribeCell")
+        postCollectionView.register(UINib.init(nibName: "WithWideImagePostCell", bundle: nil), forCellWithReuseIdentifier: "WithWideImagePostCell")
+        postCollectionView.register(UINib.init(nibName: "TitleOnlyPostCell", bundle: nil), forCellWithReuseIdentifier: "TitleOnlyPostCell")
+        postCollectionView.register(UINib.init(nibName: "WithTextPostCell", bundle: nil), forCellWithReuseIdentifier: "WithTextPostCell")
     }
-    */
+}
 
+// MARK: UICollectionViewDelegate
+
+extension PostViewController: UICollectionViewDelegate {  }
+
+// MARK: UICollectionViewDataSource
+
+extension PostViewController: UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 2
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "WithWideImagePostCell", for: indexPath) as? WithWideImagePostCell else {
+            return UICollectionViewCell()
+        }
+        return cell
+    }
 }
